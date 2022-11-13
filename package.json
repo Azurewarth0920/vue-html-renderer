@@ -1,0 +1,21 @@
+{
+  "name": "vue-html-renderer",
+  "version": "0.0.1",
+  "description": "Yet another Vue's renderer that parse html string and render the AST to components.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:Azurewarth0920/vue-html-renderer.git",
+  "author": "pei.fan <fanpei920@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "ultrahtml": "^1.0.0",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3"
+  }
+}
