@@ -7,9 +7,9 @@ import {
   COMMENT_NODE,
   DOCUMENT_NODE,
 } from 'ultrahtml'
-import { h, VNode } from 'vue'
+import { h, VNode, createCommentVNode } from 'vue'
 
-const traverseNode = (node: Node): string | VNode | (string | VNode)[] => {
+const traverseNode = (node: Node): string | VNode => {
   if (node.type === DOCUMENT_NODE) {
     return node.children.map(traverseNode)
   }
@@ -23,7 +23,7 @@ const traverseNode = (node: Node): string | VNode | (string | VNode)[] => {
   }
 
   if (node.type === COMMENT_NODE) {
-    return node.value
+    return createCommentVNode(node.value)
   }
 
   return ''
