@@ -7,6 +7,6 @@
 
 <script setup lang="ts">
 const htmlString = `
-  <div><h1 data-avbbad onclick="console.log(this)" class="h1">Hello world</h1>    <!-- <h2>sample</h2> --></div>
+  <div><h1 data-avbbad onclick="console.log(this)" class="h1">Hello world</h1><br><br><br>hi<!-- <h2>sample</h2> --></div>
 `
 </script>
